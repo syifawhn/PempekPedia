@@ -11,8 +11,6 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerView rvRestoran;
 
-    private ArrayList<ModelRestoran> data = new ArrayList<>();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,8 +18,5 @@ public class MainActivity extends AppCompatActivity {
 
         rvRestoran = findViewById(R.id.rv_restoran);
         rvRestoran.setHasFixedSize(true);
-
-        data.addAll(DataRestoran.ambilDataRestoran());
-
     }
 }
